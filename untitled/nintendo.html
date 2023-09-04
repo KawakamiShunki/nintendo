@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="resource/css/nintendo.css">
+</head>
+<body>
+    <div class="page">
+        <!--バナー-->
+        <div class="page_banner">
+            <a href="https://store-jp.nintendo.com/feature_carriage.html" target="_blank" rel="noopener" class="banner" style="background-color: #f0f0f0;">
+                <div class="banner_inner">
+                    <img class="banner_img_pc" src="resource/images/PC_header_banner%20B2.webp" alt="ダウンロードソフトも合算対象になりました。5,500円以上で送料無料。">
+                </div>
+            </a>
+        </div>
+
+        <!--ヘッダー-->
+        <div class="header is_search_hidden" style="padding-top: 0">
+            <header class="header_content">
+                <div class="header_contentInner">
+                    <div class="header_header">
+                        <button class="header_gnavButton">
+                            <i class="header_gnavButtonIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                    <title>メニュー</title>
+                                    <path fill-rule="evenodd" d="M21.5 20.035c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5h-15c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5zm0-7.517c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5h-15c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5zM21.5 5c.829 0 1.5.672 1.5 1.5 0 .829-.671 1.5-1.5 1.5h-15C5.672 8 5 7.329 5 6.5 5 5.672 5.672 5 6.5 5z"></path>
+                                </svg>
+                            </i>
+                        </button>
+                        <div class="header_logo">
+                            <a href="https://store-jp.nintendo.com/" class="header_logoLink">
+                                <img src="resource/images/logo-mns.svg" alt="My Nintendo Store" class="header_logoImg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header_searchWrap">
+                        <div class="header_search is_hidden">
+                            <form class="header_searchBox">
+                                <label class="header_searchIcon" for="header_searchInput">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <title>Search</title>
+                                            <path fill-rule="evenodd" d="M6.756 10.29c-.975-.974-.975-2.56 0-3.534.487-.487 1.128-.732 1.768-.732.64 0 1.281.245 1.768.732.975.974.975 2.56 0 3.535-.974.974-2.56.976-3.536 0m7.778 2.122l-1.226-1.226c1.162-2.092.88-4.778-.895-6.552-2.143-2.144-5.633-2.146-7.778 0-1.039 1.038-1.61 2.42-1.61 3.888 0 1.469.571 2.85 1.61 3.889 1.072 1.072 2.48 1.608 3.89 1.608.921 0 1.835-.253 2.662-.712l1.226 1.226c.293.293.677.44 1.061.44.384 0 .767-.147 1.06-.44.586-.585.586-1.535 0-2.121"></path>
+                                        </svg>
+                                    </i>
+                                </label>
+                                <div class="header_searchInput">
+                                    <input id="header_searchInput" type="text" name="q" value autocomplete="off" placeholder="商品をさがす" >
+                                </div>
+                            </form>
+                            <div class="header_searchController">
+                                <button type="button" class="header_searchControllerClear">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                            <title>Close</title>
+                                            <path fill-rule="evenodd" d="M11.106 9.003l2.458-2.46c.582-.582.582-1.524 0-2.106-.581-.58-1.523-.58-2.105 0L9 6.897l-2.458-2.46c-.583-.58-1.525-.58-2.106 0-.582.582-.582 1.524 0 2.106l2.458 2.46L4.44 11.46c-.582.581-.582 1.524 0 2.106.29.291.672.436 1.053.436.38 0 .76-.145 1.052-.436L9 11.11l2.454 2.456c.29.291.672.436 1.052.436s.763-.145 1.053-.436c.582-.582.582-1.525 0-2.106l-2.454-2.456z"></path>
+                                        </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="header_searchControllerCancel">
+                                    キャンセル
+                                </button>
+                            </div>
+                            <div class="header_suggest">
+                                <div class="header_suggestBackground"></div>
+                                <div class="header_popular">
+                                    <p class="header_suggestLabel">よく検索されているワード</p>
+                                    <ul class="header_suggestItems">
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=amiibo スプラトゥーン">amiibo スプラトゥーン</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=amiibo">amiibo</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=ピクミン">ピクミン</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=スプラトゥーン">スプラトゥーン</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=ゼルダ">ゼルダ</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=ポケモン">ポケモン</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=マリオ">マリオ</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=amiibo ゼルダ">amiibo ゼルダ</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=カービィ">カービィ</a>
+                                        </li>
+                                        <li class="header_suggestItem">
+                                            <a href="https://store-jp.nintendo.com/search/?=ドラゴンクエスト">ドラゴンクエスト</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="header_autocomplete" style="display: none">
+                                    <div class="header_autocompleteLoading">
+                                        <div class="c_dotsLoading is_loading">
+                                            <span class="c_dotsLoading_circles">
+                                                <span></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="header_iconMenu_pc">
+                            <li class="header_iconMenuItem_pc">
+                                <a href="https://store-jp.nintendo.com/wishlist/" class="header_iconMenuLink_pc">
+                                    <i class="header_iconMenuIcon_pc">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                            <title>ほしいものリスト</title>
+                                            <path fill-rule="evenodd" d="M9.542 8.318c-.479 0-.926.139-1.317.423-.628.456-1.037 1.199-1.152 2.092-.178 1.402.384 2.98 1.587 4.443 1.638 1.993 3.947 3.442 5.349 4.316l.074-.046c1.388-.864 3.71-2.31 5.26-4.26 1.211-1.526 1.772-3.14 1.58-4.547-.116-.85-.51-1.557-1.109-1.992-1.23-.894-3.017-.325-4.666 1.484l-.74.81c-.199.219-.541.218-.739 0l-.738-.812c-1.137-1.25-2.342-1.911-3.389-1.911zm4.467 14.375c-.451 0-.903-.127-1.306-.38l-.24-.15c-1.554-.968-4.153-2.59-6.121-4.982-1.733-2.108-2.529-4.498-2.244-6.73.219-1.72 1.059-3.19 2.363-4.137 2.214-1.608 5.078-1.257 7.581.83 2.493-2.07 5.34-2.42 7.536-.824 1.267.92 2.09 2.346 2.318 4.013.303 2.225-.479 4.646-2.204 6.818-1.873 2.359-4.471 3.976-6.024 4.942l-.349.218c-.403.254-.856.382-1.31.382z"></path>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="header_iconMenuItem_pc">
+                                <a href="https://store-jp.nintendo.com/cart/" class="header_iconMenuLink_pc">
+                                    <i class="header_iconMenuIcon_pc">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                                            <title>カート</title>
+                                            <path fill-rule="evenodd" d="M19.504 20.361c-.911 0-1.65.74-1.65 1.65 0 .912.739 1.65 1.65 1.65.912 0 1.65-.738 1.65-1.65 0-.91-.738-1.65-1.65-1.65zm-9.957 0c-.911 0-1.649.74-1.649 1.65 0 .912.738 1.65 1.649 1.65.912 0 1.65-.738 1.65-1.65 0-.91-.738-1.65-1.65-1.65zm.54-4.245h8.855l1.049-6.342H9.039l1.048 6.342zm9.28 3H9.663c-1.229 0-2.266-.88-2.466-2.092L5.543 7.016H4.115c-.829 0-1.5-.67-1.5-1.5 0-.828.671-1.5 1.5-1.5h1.852c1.229 0 2.266.88 2.466 2.093l.11.665h13.216c.44 0 .859.194 1.144.53.285.336.408.78.336 1.215l-1.406 8.505c-.2 1.212-1.237 2.092-2.466 2.092z"></path>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <nav class="header_navigation">
+                    <ul class="header_navigationGroup">
+                        <li class="header_navigationItem">
+                            <a href="https://store-jp.nintendo.com" class="header_navigationLink">
+                                <span>トップ</span>
+                            </a>
+                        </li>
+                        <li class="header_navigationItem is_current" aria-current="page">
+                            <a href="https://store-jp.nintendo.com/software/" class="header_navigationLink">
+                                <span>ソフト</span>
+                            </a>
+                        </li>
+                        <li class="header_navigationItem">
+                            <a href="https://store-jp.nintendo.com/hardware-accessory" class="header_navigationLink">
+                                <span>本体・周辺機器</span>
+                            </a>
+                        </li>
+                        <li class="header_navigationItem">
+                            <a href="https://store-jp.nintendo.com/goods" class="header_navigationLink">
+                                <span>グッズ</span>
+                            </a>
+                        </li>
+                        <li class="header_navigationItem">
+                            <a href="https://store-jp.nintendo.com/point-item" class="header_navigationLink">
+                                <span>交換グッズ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!--メイン-->
+        <div class="page_main">
+            <div class="product">
+                <div class="product_carousel">
+                    <div class="heroCarousel">
+                        <ul class="heroCarousel_imageList slick_initialized slick_slider slick_dotted" data-has-thumbnails="true">
+                            <div class="slick_prev slick_arrow" style>
+                                <button style="opacity: 0;">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><title> Backward</title><path fill-rule="evenodd" d="M4.926 9c0 .332.109.663.329.937l4 5c.518.647 1.46.751 2.108.234.646-.517.753-1.459.234-2.109L8.347 9l3.25-4.062c.519-.65.412-1.592-.234-2.109-.647-.517-1.59-.413-2.108.234l-4 5c-.22.274-.33.605-.33.937"></path></svg>
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="slick_list draggable" style="padding: 0 50px;">
+                                <div class="slick_track" style="opacity: 1; width: 35000px; transform: translate3d(-818px,0,0);">
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="0" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="1" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="2" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="3" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="4" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="5" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="6" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="7" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="8" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="9" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="10" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="11" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="12" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="heroCarousel_image_squareRectangle slick_slide slick_cloned" id role="tabpanel" aria-labelledby="carousel_thumbnail_6" data-slick-index="13" aria-hidden="true" tabindex="-1">
+                                        <div class="heroCarousel_imageContent">
+                                            <picture class="heroCarousel_imageItem">
+                                                <source media="(min-width:768px)" srcset="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp">
+                                                <img src="resource/images/d491f67f8f108b679f956a879c060240938ff590307768a98ccd907d3987524b.webp" alt="シェルター ジェネレーション" class>
+                                            </picture>
+                                        </div>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="slick_next slick_arrow" style>
+                                <button style="opacity: 0;">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"><title> Forward</title><path fill-rule="evenodd" d="M13.076 9c0 .332-.11.663-.33.937l-4 5c-.517.647-1.46.751-2.107.234-.646-.517-.753-1.459-.234-2.109L9.655 9l-3.25-4.062c-.52-.65-.412-1.592.234-2.109.647-.517 1.59-.413 2.108.234l4 5c.22.274.329.605.329.937"></path></svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </ul>
+                        <div class="heroCarousel_thumbnailArea">
+                            <ul class="slick_dots" role="tablist" style>
+                                <li class role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                                <li role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                                <li role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                                <li role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                                <li role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                                <li role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                                <li role="presentation">
+                                    <figure class="heroCarousel_thumbnailItem">
+                                        <img src="resource/images/49d37701988b4f15c199dccbc585d09c95d005de230c58a8eac563f05a536d97.webp" alt="シェルター ジェネレーション">
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                        <div  class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="pswp_bg"></div>
+                            <div class="pswp_scroll_wrap">
+                                <div class="pswp_container">
+                                    <div class="pswp_item"></div>
+                                    <div class="pswp_item"></div>
+                                    <div class="pswp_item"></div>
+                                </div>
+                                <div class="pswp_ui pswp_ui_hidden">
+                                    <div class="pswp_top_bar">
+                                        <div class="pswp_counter"></div>
+                                        <button class="pswp_button pswp_button_close" title="Close(Esc)"></button>
+                                        <button class="pswp_button pswp_button_fs" title="Toggle fullscreen"></button>
+                                        <button class="pswp_button pswp_button_zoom" title="Zoom in/out"></button>
+                                        <div class="pswp_preloader">
+                                            <div class="pswp_preloader_icn">
+                                                <div class="pswp_preloader_cut">
+                                                    <div class="pswp_preloader_donut"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pswp_share_modal pswp_share_modal_hidden pswp_single_tap">
+                                        <div class="pswp_share_tooltip"></div>
+                                    </div>
+                                    <button class="pswp_button pswp_button_arrow_left" title="previous(arrow left)"></button>
+                                    <button class="pswp_button pswp_button_arrow_right" title="Next (arrow right)"></button>
+                                    <div class="pswp_caption">
+                                        <div class="pswp_caption_center"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product_main"></div>
+
+                <div class="product_cardLists"></div>
+
+                <div class="product_main"></div>
+            </div>
+
+            <div class="footer">
+                <footer class="footer_container">
+                    <div class="footer_content">
+                        <ol class="footer_breadcrumbs"></ol>
+
+                        <div class="footer_recommend"></div>
+
+                        <div class="footer_band"></div>
+
+                        <div class="footer_menu"></div>
+                    </div>
+
+                    <div class="footer_footer"></div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
