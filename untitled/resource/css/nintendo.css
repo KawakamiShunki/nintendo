@@ -541,8 +541,442 @@ body {
     top: 50%;
     width: 40px;
     height: 48px;
-    transition: translateY(-50%);
+    transform: translateY(-50%);
+    transition: opacity .3s cubic-bezier(.411,0,.174,1);
+    background-color: #d20313;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+    opacity: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    padding: 0;
 }
+
+.slick_arrow button i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 100%;
+}
+
+.slick_list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.slick_slider .slick_list, .slick_slider .slick_track {
+    transform: translate3d(0,0,0);
+}
+
+.slick_track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick_track:after, .slick_track:before {
+    content: "";
+    display: table;
+}
+
+.slick_slide {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+.slick_initialized .slick_slide {
+    display: block;
+}
+
+@media (min-height: 768px) {
+    .heroCarousel_image_feature ,.heroCarousel_image_rectangle,.heroCarousel_image_squareRectangle {
+        width: 684px;
+        height: 385px;
+        margin: 0 2px;
+    }
+}
+
+.heroCarousel_image_feature,.heroCarousel_image_rectangle,.heroCarousel_image_image_square,.heroCarousel_image_squareRectangle {
+    overflow: hidden;
+    position: relative;
+    margin: 0 4px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.heroCarousel_image_squareRectangle .heroCarousel_imageContent, .heroCarousel_image_squareRectangle .heroCarousel_videoContent {
+    padding-top: 100%!important;
+}
+
+.heroCarousel_imageContent, .heroCarousel_videoContent {
+    position: relative;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .heroCarousel_image_squareRectangle .heroCarousel_imageContent, .heroCarousel_image_squareRectangle .heroCarousel_videoContent {
+        padding-top: 56.25%!important;
+    }
+}
+
+.heroCarousel_imageItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .heroCarousel_image_squareRectangle .heroCarousel_imageItem>img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.heroCarousel_image_squareRectangle .heroCarousel_imageItem>img {
+    width: 100%;
+    height: auto;
+}
+
+.slick_slide img {
+    display: block;
+}
+
+.heroCarousel_imageItem>img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slick_next {
+    right: 0;
+}
+
+.slick_next button {
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    right: 0;
+}
+
+.slick_next button i {
+    margin-left: auto;
+}
+
+.slick_arrow button i path {
+    fill: #fff;
+}
+
+.heroCarousel_thumbnailArea {
+    display: flex;
+    justify-content: center;
+    max-width: 684px;
+    margin: 12px auto -4px;
+    padding: 0 22px;
+}
+
+@media  (min-width: 768px) {
+    .heroCarousel_thumbnailArea {
+        padding: 0 8px;
+    }
+}
+
+.heroCarousel_thumbnailArea .slick_dots {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0 -2px 0 -3px;
+}
+
+.heroCarousel_thumbnailArea .slick_dots li {
+    position: relative;
+    flex: 0 0 38px;
+    width: 38px;
+    margin: 0 2px 4px 2px;
+    cursor: pointer;
+}
+
+.heroCarousel_thumbnailArea .heroCarousel_thumbnailItem {
+    height: 0;
+    padding-top: 100%;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroCarousel_thumbnailArea .heroCarousel_thumbnailItem::before {
+    content: "";
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(35,30,30,.1);
+    transition: opacity .1s cubic-bezier(.411,0,.174,1);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.heroCarousel_thumbnailArea .heroCarousel_thumbnailItem img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.heroCarousel_thumbnailArea .slick_dots .slick_active::after {
+    content: "";
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    top: 0;
+    left: 0;
+    border: 3px solid #e60012;
+    border-radius: 2px;
+    pointer-events: none;
+    will-change: transform;
+    z-index: 1;
+}
+
+.pswp {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    touch-action: none;
+    z-index: 1500;
+    outline: 0;
+}
+
+.pswp_bg {
+    will-change: opacity;
+    transition: opacity 333ms cubic-bezier(.4,0,.22,1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    transform: translateZ(0);
+}
+
+.pswp * {
+    box-sizing: border-box;
+}
+
+.pswp_scroll_wrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pswp_container .pswp_zoom_wrap {
+    -webkit-backface-visibility: hidden;
+    touch-action: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.pswp_container .pswp_img {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+}
+
+.pswp_item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.pswp_ui {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1550;
+}
+
+.pswp_ui_hidden .pswp_button_arrow_left, .pswp_ui_hidden .pswp_button_arrow_right, .pswp_ui_hidden .pswp_caption, .pswp_ui_hidden .pswp_top_bar {
+    opacity: .001;
+}
+
+.pswp_has_mouse .pswp_button_arrow_left, .pswp_has_mouse .pswp_button_arrow_right, .pswp_caption, .pswp_top_bar {
+    -webkit-backface-visibility: hidden;
+    will-change: opacity;
+    transition: opacity 333ms cubic-bezier(.4,0,.22,1);
+}
+
+.pswp_caption, .pswp_top_bar {
+    background-color: rgba(0,0,0,.5);
+}
+
+.pswp_top_bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+.pswp_counter {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 44px;
+    font-size: 13px;
+    line-height: 44px;
+    color: #fff;
+    opacity: .75;
+    padding: 0 10px;
+}
+
+.pswp_counter .pswp_share_modal {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pswp_button_close {
+    background-position: 0 -44px;
+}
+
+.pswp_button {
+    width: 44px;
+    height: 44px;
+    position: relative;
+    background: 0 0;
+    cursor: pointer;
+    overflow: visible;
+    -webkit-appearance: none;
+    display: block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    opacity: .75;
+    transition: opacity .2s;
+    box-shadow: none;
+}
+
+.pswp_button_fs {
+    display: none;
+}
+
+.pswp_button_zoom {
+    display: none;
+    background-position: -88px 0;
+}
+
+.pswp_button, .pswp_button_arrow_left:before, .pswp_button_arrow_right:before {
+    background: 0 0 no-repeat;
+    background-size: 264px 88px;
+    width: 44px;
+    height: 44px;
+}
+
+.pswp_preloader {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -22px;
+    opacity: 0;
+    transition: opacity .25s ease-out;
+    will-change: opacity;
+    direction: ltr;
+}
+
+.pswp_preloader_icn {
+    width: 20px;
+    height: 20px;
+    margin: 12px;
+}
+
+.pswp_share_modal_hidden {
+    display: none;
+}
+
+.pswp_share_modal {
+    display: block;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .25s ease-out;
+    -webkit-backface-visibility: hidden;
+    will-change: opacity;
+}
+
+.pswp_share_tooltip {
+    z-index: 1620;
+    position: absolute;
+    background: #fff;
+    top: 56px;
+    border-radius: 2px;
+    width: auto;
+    right: 44px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.25);
+    transform: translateY(6px);
+    transition: transform .25s;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+}
+
+.pswp_caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 44px;
+}
+
+.pswp_caption_center {
+    text-align: left;
+    max-width: 420px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 20px;
+    color: #ccc;
+}
+
+
+
+
+
 
 
 
