@@ -1495,7 +1495,7 @@ body {
   margin: 0 auto;
   padding: 0 52px 16px;
   width: 1224px;
-  font-size: larger;
+  font-size: 19px;
 }
 
 .scroll_wrapper {
@@ -1515,7 +1515,7 @@ body {
 
 .cardCarousel_item {
   padding-right: 24px;
-  font-size: x-small;
+  font-size: 10px;
 }
 
 .itemImage {
@@ -1546,8 +1546,8 @@ body {
   font-weight: bold;
 }
 
-.cardLists_item_price span {
-  font-size: small;
+.cardLists_item_price span{
+  font-size: 13px;
 }
 
 .cardLists_item_price_onSale {
