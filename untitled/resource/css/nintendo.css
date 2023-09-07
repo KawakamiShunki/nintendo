@@ -1513,10 +1513,6 @@ body {
   display: flex;
 }
 
-.slider {
-  -webkit-overflow-scrolling: touch;
-}
-
 .cardCarousel_item {
   padding-right: 24px;
   font-size: x-small;
