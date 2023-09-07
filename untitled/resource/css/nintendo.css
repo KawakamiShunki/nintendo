@@ -1491,13 +1491,78 @@ body {
   margin: 76px 0;
 }
 
+.cardCarousel_cardList_title {
+  margin: 0 auto;
+  padding: 0 52px 16px;
+  width: 1224px;
+  font-size: 19px;
+}
+
+.scroll_wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scroll_wrapper::-webkit-scrollbar {
+  display: none;
+  height: 0;
+}
+
+.cardCarousel_itemList_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.cardCarousel_item {
+  padding-right: 24px;
+  font-size: 10px;
+}
+
+.itemImage {
+  width: 200px;
+  height: 200px;
+}
+
+.cardCarousel_item_title {
+  width: 200px;
+  padding-top: 8px;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.cardLists_item_price {
+  color: #e60012;
+  font-weight: bold;
+}
+
+.cardLists_item_price span{
+  font-size: 13px;
+}
+
+.cardLists_item_price_onSale {
+  display: flex;
+  align-items: center;
+}
+
+.cardLists_item_price_onSale .cardLists_item_price {
+  padding-right: 8px;
+}
+
+.cardLists_item_price_onSale_percent {
+  padding: 2px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: #d20313;
+}
 
 .footer {
   margin-top: auto;
   padding-top: 56px;
   color: #231e1e;
 }
-
 
 .footer_container {
   margin: 0 auto;
@@ -1532,11 +1597,9 @@ body {
   color: #a09696;
 }
 
-
 .u_display_none {
   display: none;
 }
-
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
