@@ -1511,6 +1511,7 @@ body {
 
 .cardCarousel_itemList_flex {
   display: flex;
+  justify-content: center;
 }
 
 .cardCarousel_item {
