@@ -1491,12 +1491,11 @@ body {
   margin: 76px 0;
 }
 
-
 .cardCarousel_cardList_title {
   margin: 0 auto;
   padding: 0 52px 16px;
   width: 1224px;
-  font-size: larger;
+  font-size: 19px;
 }
 
 .scroll_wrapper {
@@ -1516,7 +1515,7 @@ body {
 
 .cardCarousel_item {
   padding-right: 24px;
-  font-size: x-small;
+  font-size: 10px;
 }
 
 .itemImage {
@@ -1539,7 +1538,7 @@ body {
 }
 
 .cardLists_item_price span{
-  font-size: small;
+  font-size: 13px;
 }
 
 .cardLists_item_price_onSale {
@@ -1559,13 +1558,11 @@ body {
   background-color: #d20313;
 }
 
-
 .footer {
   margin-top: auto;
   padding-top: 56px;
   color: #231e1e;
 }
-
 
 .footer_container {
   margin: 0 auto;
@@ -1600,11 +1597,9 @@ body {
   color: #a09696;
 }
 
-
 .u_display_none {
   display: none;
 }
-
 
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
