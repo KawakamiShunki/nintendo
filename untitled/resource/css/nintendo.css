@@ -445,11 +445,11 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.slick-dots .slick-active{
-  border:3px solid #e60012;
+.slick-dots .slick-active {
+  border: 3px solid #e60012;
 }
 
 .product_main {
@@ -1136,7 +1136,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .cardCarousel {
@@ -1157,7 +1157,7 @@ body {
   font-weight: bold;
 }
 
-.cardLists_item_price span{
+.cardLists_item_price span {
   font-size: 13px;
 }
 

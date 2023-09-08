@@ -5,9 +5,9 @@ $('.heroCarousel_slider').slick({
   dots: true,
   appendDots: $('.heroCarousel_thumbnailArea'),
   arrows: true,
-  customPaging: ((slider,i)=>{
+  customPaging: ((slider, i) => {
     let imageUrl = slider.$slides.eq(i).find('img').attr('src');
-    if(i===0){
+    if (i === 0) {
       imageUrl = "resource/images/shelter_square.webp"
     }
     return `<figure class="heroCarousel_thumbnailItem">
