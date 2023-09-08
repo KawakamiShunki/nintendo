@@ -456,11 +456,11 @@ body {
   margin: 0 auto;
   color: #231e1e;
   padding: 0 52px;
-  max-width: 1224px;
+  width: 1224px;
 }
 
 .product_columns {
-  margin: 36px 26px 26px;
+  margin: 36px 0 26px;
 }
 
 .product_headline_title {
@@ -1139,6 +1139,10 @@ body {
   transform: translate(-50%,-50%);
 }
 
+.cardCarousel {
+  margin-bottom: 40px;
+}
+
 .cardCarousel_item_title {
   width: 200px;
   padding-top: 8px;
@@ -1176,6 +1180,24 @@ body {
 
 .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
   opacity: 0;
+}
+
+.safe_attention, .copyright {
+  color: #a09696;
+}
+
+.safe_attention {
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.safe_attention a {
+  text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
 }
 
 .footer {
