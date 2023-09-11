@@ -1120,6 +1120,10 @@ body {
   justify-content: center;
 }
 
+.cardCarousel_itemList_flex_child {
+  display: flex;
+}
+
 .cardCarousel_item {
   padding-right: 24px;
   font-size: 10px;
@@ -1153,7 +1157,6 @@ body {
 }
 
 .cardLists_item_price {
-  color: #e60012;
   font-weight: bold;
 }
 
@@ -1164,6 +1167,10 @@ body {
 .cardLists_item_price_onSale {
   display: flex;
   align-items: center;
+}
+
+.cardLists_item_price_onSale span, .cardLists_item_price_onSale small {
+  color: #e60012;
 }
 
 .cardLists_item_price_onSale .cardLists_item_price {
