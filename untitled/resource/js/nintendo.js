@@ -18,8 +18,8 @@ $('.heroCarousel_slider').slick({
 })
 
 $('.cardCarousel_itemList_flex').slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   centerMode: true,
   centerPadding: '25%',
   infinite: false
