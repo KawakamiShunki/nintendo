@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css"
@@ -10,11 +11,14 @@
 </head>
 <body>
 <div class="page">
+
   <!--バナー-->
   <div class="page_banner">
     <a href="https://store-jp.nintendo.com/feature_carriage.html" target="_blank" rel="noopener" class="banner">
       <div class="banner_inner">
-        <img src="resource/images/PC_header_banner%20B2.webp"
+        <img class="sp_hidden" src="resource/images/PC_header_banner%20B2.webp"
+             alt="ダウンロードソフトも合算対象になりました。5,500円以上で送料無料。">
+        <img class="sp_inline u_display_none" src="resource/images/SP_header_banner%20B2.jpg"
              alt="ダウンロードソフトも合算対象になりました。5,500円以上で送料無料。">
       </div>
     </a>
@@ -23,7 +27,7 @@
   <!--ヘッダー-->
   <div class="header_main">
     <header>
-      <div class="header_contentInner">
+      <div class="header_contentInner header_spColor">
         <div class="header_header">
           <button class="header_gnavButton">
             <i class="header_gnavButtonIcon">
@@ -40,8 +44,8 @@
             </a>
           </div>
         </div>
-        <div class="header_searchWrap">
-          <div class="header_search">
+        <div class="header_searchWrap header_spColor">
+          <div class="header_search sp_hidden">
             <form class="header_searchBox">
               <label class="header_searchIcon" for="header_searchInput">
                 <i>
@@ -112,6 +116,12 @@
               </div>
             </div>
           </div>
+          <svg class="u_display_none sp_inline header_spIcon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+               viewBox="0 0 28 28">
+            <title>Search</title>
+            <path fill-rule="evenodd"
+                  d="M7 12.5C7 9.467 9.467 7 12.5 7S18 9.467 18 12.5 15.533 18 12.5 18 7 15.533 7 12.5m15.06 7.438l-2.586-2.585C20.434 15.976 21 14.305 21 12.5 21 7.806 17.195 4 12.5 4 7.806 4 4 7.806 4 12.5S7.806 21 12.5 21c1.806 0 3.476-.567 4.853-1.526l2.585 2.585c.272.273.647.441 1.062.441.829 0 1.5-.671 1.5-1.5 0-.415-.168-.79-.44-1.062"></path>
+          </svg>
           <ul class="header_iconMenu_pc">
             <li class="header_iconMenuItem_pc">
               <a href="https://store-jp.nintendo.com/wishlist/">
@@ -855,7 +865,7 @@
       </ul>
     </div>
 
-    <div class="footer_band">
+    <div class="footer_band sp_hidden">
       <ul>
         <li>
           <a
@@ -875,7 +885,7 @@
       </ul>
     </div>
 
-    <div class="footer_menu">
+    <div class="footer_menu sp_hidden">
       <div>
         <div class="footer_menu_title">
           <a href="https://store-jp.nintendo.com/software/">ソフト</a>
@@ -926,10 +936,36 @@
         </ul>
       </div>
       <div class="footer_menu_column">
-        <div class="footer_menu_title"><a href="https://store-jp.nintendo.com/point-item/">プラチナポイント交換グッズ</a>
+        <div class="footer_menu_title"><a
+          href="https://store-jp.nintendo.com/point-item/">プラチナポイント交換グッズ</a>
         </div>
       </div>
     </div>
+
+    <ul class="footer_menu_sp u_display_none">
+      <li><a
+        href="https://store-jp.nintendo.com/list/software/?prefn1=hasReleased&prefv1=true&srule=new-arrival">最新ソフト</a>
+      </li>
+      <li><a
+        href="https://store-jp.nintendo.com/list/software/?prefn1=isSale&prefv1=true&prefn2=softType&prefv2=TITLE&srule=most-popular">セール中ソフト</a>
+      </li>
+      <li><a href="https://store-jp.nintendo.com/list/software/?pmax=1&prefn1=softType&prefv1=TITLE&srule=new-arrival">無料ソフト</a>
+      </li>
+      <li><a
+        href="https://store-jp.nintendo.com/list/software/?prefn1=hasTrial&prefv1=true&srule=new-arrival">体験版のあるソフト</a>
+      </li>
+      <li>
+        <div class="footer_menu_sp_accordion">ソフト</div>
+      </li>
+      <li>
+        <div class="footer_menu_sp_accordion">本体・周辺機器</div>
+      </li>
+      <li>
+        <div class="footer_menu_sp_accordion">グッズ</div>
+      </li>
+      <li><a href="https://store-jp.nintendo.com/point-item/">プラチナポイント交換グッズ</a></li>
+    </ul>
+
     <div class="footer_footer">
       <div class="footer_footer_inquiry">
         <a
@@ -953,7 +989,8 @@
         <li><a
           href="https://www.nintendo.co.jp/support/legal-notes/payment-services.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">資金決済法に基づく表示</a>
         </li>
-        <li><a href="https://www.nintendo.co.jp/about_hp.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂ウェブサイトポリシー</a>
+        <li><a
+          href="https://www.nintendo.co.jp/about_hp.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂ウェブサイトポリシー</a>
         </li>
         <li><a
           href="https://www.nintendo.co.jp/?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂公式ホームページ</a>
