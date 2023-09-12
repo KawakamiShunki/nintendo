@@ -37,22 +37,22 @@ body {
 
 /*ヘッダー*/
 .header_main {
+  position: sticky;
+  top: 0;
+  left: 0;
   padding-top: 0;
+  z-index: 1000;
 }
 
 .header_contentInner {
-  position: sticky;
   display: flex;
   justify-content: space-between;
   padding: 0 12px 0 0;
   background: #fff;
-  z-index: 1000;
 }
 
 .header_header {
   display: flex;
-  top: 0;
-  left: 0;
   align-items: center;
   height: 50px;
   padding: 0;
