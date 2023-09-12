@@ -18,9 +18,9 @@ $('.heroCarousel_slider').slick({
 })
 
 $('.cardCarousel_itemList_flex').slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 1,
+  slidesToScroll: 1,
   centerMode: true,
-  centerPadding: '25%',
+  centerPadding: '20.5%',
   infinite: false
 })
