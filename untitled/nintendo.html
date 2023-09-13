@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Title</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" type="text/css"
@@ -10,11 +11,14 @@
 </head>
 <body>
 <div class="page">
+
   <!--バナー-->
   <div class="page_banner">
     <a href="https://store-jp.nintendo.com/feature_carriage.html" target="_blank" rel="noopener" class="banner">
       <div class="banner_inner">
-        <img src="resource/images/PC_header_banner%20B2.webp"
+        <img class="sp_hidden" src="resource/images/PC_header_banner%20B2.webp"
+             alt="ダウンロードソフトも合算対象になりました。5,500円以上で送料無料。">
+        <img class="sp_inline u_display_none" src="resource/images/SP_header_banner%20B2.jpg"
              alt="ダウンロードソフトも合算対象になりました。5,500円以上で送料無料。">
       </div>
     </a>
@@ -23,7 +27,7 @@
   <!--ヘッダー-->
   <div class="header_main">
     <header>
-      <div class="header_contentInner">
+      <div class="header_contentInner header_spColor">
         <div class="header_header">
           <button class="header_gnavButton">
             <i class="header_gnavButtonIcon">
@@ -40,8 +44,8 @@
             </a>
           </div>
         </div>
-        <div class="header_searchWrap">
-          <div class="header_search is_hidden">
+        <div class="header_searchWrap header_spColor">
+          <div class="header_search sp_hidden">
             <form class="header_searchBox">
               <label class="header_searchIcon" for="header_searchInput">
                 <i>
@@ -112,6 +116,12 @@
               </div>
             </div>
           </div>
+          <svg class="u_display_none sp_inline header_spIcon" xmlns="http://www.w3.org/2000/svg" width="28" height="28"
+               viewBox="0 0 28 28">
+            <title>Search</title>
+            <path fill-rule="evenodd"
+                  d="M7 12.5C7 9.467 9.467 7 12.5 7S18 9.467 18 12.5 15.533 18 12.5 18 7 15.533 7 12.5m15.06 7.438l-2.586-2.585C20.434 15.976 21 14.305 21 12.5 21 7.806 17.195 4 12.5 4 7.806 4 4 7.806 4 12.5S7.806 21 12.5 21c1.806 0 3.476-.567 4.853-1.526l2.585 2.585c.272.273.647.441 1.062.441.829 0 1.5-.671 1.5-1.5 0-.415-.168-.79-.44-1.062"></path>
+          </svg>
           <ul class="header_iconMenu_pc">
             <li class="header_iconMenuItem_pc">
               <a href="https://store-jp.nintendo.com/wishlist/">
@@ -138,37 +148,38 @@
           </ul>
         </div>
       </div>
-      <nav class="header_navigation">
-        <ul class="header_navigationGroup">
-          <li class="header_navigationItem">
-            <a href="https://store-jp.nintendo.com" class="header_navigationLink">
-              <span>トップ</span>
-            </a>
-          </li>
-          <li class="header_navigationItem is_current" aria-current="page">
-            <a href="https://store-jp.nintendo.com/software/" class="header_navigationLink">
-              <span>ソフト</span>
-            </a>
-          </li>
-          <li class="header_navigationItem">
-            <a href="https://store-jp.nintendo.com/hardware-accessory" class="header_navigationLink">
-              <span>本体・周辺機器</span>
-            </a>
-          </li>
-          <li class="header_navigationItem">
-            <a href="https://store-jp.nintendo.com/goods" class="header_navigationLink">
-              <span>グッズ</span>
-            </a>
-          </li>
-          <li class="header_navigationItem">
-            <a href="https://store-jp.nintendo.com/point-item" class="header_navigationLink">
-              <span>交換グッズ</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
   </div>
+
+  <nav class="header_navigation">
+    <ul class="header_navigationGroup">
+      <li class="header_navigationItem">
+        <a href="https://store-jp.nintendo.com" class="header_navigationLink">
+          <span>トップ</span>
+        </a>
+      </li>
+      <li class="header_navigationItem is_current" aria-current="page">
+        <a href="https://store-jp.nintendo.com/software/" class="header_navigationLink">
+          <span>ソフト</span>
+        </a>
+      </li>
+      <li class="header_navigationItem">
+        <a href="https://store-jp.nintendo.com/hardware-accessory" class="header_navigationLink">
+          <span>本体・周辺機器</span>
+        </a>
+      </li>
+      <li class="header_navigationItem">
+        <a href="https://store-jp.nintendo.com/goods" class="header_navigationLink">
+          <span>グッズ</span>
+        </a>
+      </li>
+      <li class="header_navigationItem">
+        <a href="https://store-jp.nintendo.com/point-item" class="header_navigationLink">
+          <span>交換グッズ</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   <!--メイン-->
   <div class="page_main">
@@ -681,7 +692,7 @@
         </ul>
       </div>
       <div>
-        <ul class="cardCarousel_itemList_flex_child">
+        <ul class="flexbox">
           <li class="cardCarousel_item">
             <a href="https://store-jp.nintendo.com/list/software/D70010000006601.html" tabindex="0">
               <div class="cardCarousel_item_image">
@@ -765,204 +776,231 @@
       </div>
     </div>
   </div>
+
+  <div class="product_main">
+    <div class="safe_attention">ご使用前にNintendo Switchの「
+      <a href="https://www.nintendo.co.jp/anzen/index.html?_ga=2.2757040.1677809735.1693722666-1286724790.1693370638">安全に使用するために</a>
+      」を必ずお読みください
+    </div>
+    <div class="copyright">
+      <div>© 2018 Might and Delight</div>
+      <div>© 2018 CIRCLE Ent.</div>
+      <div>© 2018 Initory</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer_breadcrumbs">
+      <ol class="footer_breadcrumbs_content flexbox">
+        <li>
+          <a href="https://store-jp.nintendo.com/">
+            <span>トップ</span>
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+            <title>Forward</title>
+            <path fill-rule="evenodd"
+                  d="M10.17 7c0 .258-.085.516-.256.729l-3.111 3.889c-.403.503-1.136.584-1.64.182-.502-.402-.585-1.135-.182-1.64L7.51 7 4.981 3.84c-.403-.505-.32-1.237.182-1.64.504-.402 1.237-.32 1.64.182l3.111 3.89c.171.212.256.47.256.728"></path>
+          </svg>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/software/">
+            <span>ソフト</span>
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+            <title>Forward</title>
+            <path fill-rule="evenodd"
+                  d="M10.17 7c0 .258-.085.516-.256.729l-3.111 3.889c-.403.503-1.136.584-1.64.182-.502-.402-.585-1.135-.182-1.64L7.51 7 4.981 3.84c-.403-.505-.32-1.237.182-1.64.504-.402 1.237-.32 1.64.182l3.111 3.89c.171.212.256.47.256.728"></path>
+          </svg>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/list/software/simulation/">
+            <span>シミュレーション</span>
+          </a>
+          <span>／</span>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/list/software/action/">
+            <span>アクション</span>
+          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+            <title>Forward</title>
+            <path fill-rule="evenodd"
+                  d="M10.17 7c0 .258-.085.516-.256.729l-3.111 3.889c-.403.503-1.136.584-1.64.182-.502-.402-.585-1.135-.182-1.64L7.51 7 4.981 3.84c-.403-.505-.32-1.237.182-1.64.504-.402 1.237-.32 1.64.182l3.111 3.89c.171.212.256.47.256.728"></path>
+          </svg>
+        </li>
+        <li>
+          <span>シェルタージェネレーション</span>
+        </li>
+      </ol>
+    </div>
+
+    <div class="footer_recommend">
+      <h2 class="footer_recommend_title">おすすめ特集</h2>
+      <ul class="footer_recommend_content">
+        <li>
+          <a href="https://store-jp.nintendo.com/feature_customize_2306.html">
+            <img src="resource/images/switch_pastel.webp" alt="Switch Pastel">
+            <div>【公式ストア限定】</div>
+            <div>あなたなら何色にしますか？</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/software_taikenban.html">
+            <img src="resource/images/taikenban.webp" alt="Taikenban">
+            <div>まずは試してみませんか？</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/feature-pikmin/">
+            <img src="resource/images/pikmin.webp" alt="Pikmin">
+            <div>色とりどりのピクミンといっしょに。ピクミンのゲームやグッズを集めました。</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/download_ranking_2308.html">
+            <img src="resource/images/mynin_ranking_banner_2023_8.webp" alt="Ranking">
+            <div>2023年8月の月間ダウンロードランキングをご紹介します。</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer_band sp_hidden">
+      <ul>
+        <li>
+          <a
+            href="https://store-jp.nintendo.com/list/software/?prefn1=hasReleased&prefv1=true&srule=new-arrival">最新ソフト</a>
+        </li>
+        <li>
+          <a
+            href="https://store-jp.nintendo.com/list/software/?prefn1=isSale&prefv1=true&prefn2=softType&prefv2=TITLE&srule=most-popular">セール中ソフト</a>
+        </li>
+        <li>
+          <a href="https://store-jp.nintendo.com/list/software/?pmax=1&prefn1=softType&prefv1=TITLE&srule=new-arrival">無料ソフト</a>
+        </li>
+        <li>
+          <a
+            href="https://store-jp.nintendo.com/list/software/?prefn1=hasTrial&prefv1=true&srule=new-arrival">体験版のあるソフト</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer_menu sp_hidden">
+      <div>
+        <div class="footer_menu_title">
+          <a href="https://store-jp.nintendo.com/software/">ソフト</a>
+        </div>
+        <ul class="footer_menu_contents">
+          <li><a href="https://store-jp.nintendo.com/list/software/action/">アクション</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/adventure/">アドベンチャー</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/shooting/">シューティング</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/role-playing/">ロールプレイング</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/simulation/">シミュレーション</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/sports/">スポーツ</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/fighting/">格闘</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/racing/">レース</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/rhythm/">音楽ゲーム</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/puzzle/">パズル</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/table/">テーブルゲーム</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/party/">パーティ</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/communication/">コミュニケーション</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/education/">学習・教育</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/training/">トレーニング</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/software/tool/">ツール</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer_menu_title"><a href="https://store-jp.nintendo.com/hardware-accessory/">本体・周辺機器</a>
+        </div>
+        <ul class="footer_menu_contents">
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/hardware/">本体</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/controller/">コントローラー</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/amiibo/">amiibo</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/dock-battery/">ドック・バッテリー</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/case/">ケース</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/sd-card/">microSDカード</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/other-hardware-accessory/">その他</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer_menu_title"><a href="https://store-jp.nintendo.com/goods/">グッズ</a></div>
+        <ul class="footer_menu_contents">
+          <li><a href="https://store-jp.nintendo.com/list/goods/hobby/">おもちゃ・フィギュア</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/stationery/">文房具・ステーショナリー</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/fashion/">ファッション</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/bag-pouch/">バッグ・ポーチ</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/general-goods/">雑貨・小物</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/home-kitchen/">ホーム・キッチン</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/book-music-poster/">本・音楽・ポスター</a></li>
+          <li><a href="https://store-jp.nintendo.com/list/goods/smartphone-goods/">スマホグッズ</a></li>
+        </ul>
+      </div>
+      <div class="footer_menu_column">
+        <div class="footer_menu_title"><a
+          href="https://store-jp.nintendo.com/point-item/">プラチナポイント交換グッズ</a>
+        </div>
+      </div>
+    </div>
+
+    <ul class="footer_menu_sp u_display_none">
+      <li><a
+        href="https://store-jp.nintendo.com/list/software/?prefn1=hasReleased&prefv1=true&srule=new-arrival">最新ソフト</a>
+      </li>
+      <li><a
+        href="https://store-jp.nintendo.com/list/software/?prefn1=isSale&prefv1=true&prefn2=softType&prefv2=TITLE&srule=most-popular">セール中ソフト</a>
+      </li>
+      <li><a href="https://store-jp.nintendo.com/list/software/?pmax=1&prefn1=softType&prefv1=TITLE&srule=new-arrival">無料ソフト</a>
+      </li>
+      <li><a
+        href="https://store-jp.nintendo.com/list/software/?prefn1=hasTrial&prefv1=true&srule=new-arrival">体験版のあるソフト</a>
+      </li>
+      <li>
+        <div class="footer_menu_sp_accordion">ソフト</div>
+      </li>
+      <li>
+        <div class="footer_menu_sp_accordion">本体・周辺機器</div>
+      </li>
+      <li>
+        <div class="footer_menu_sp_accordion">グッズ</div>
+      </li>
+      <li><a href="https://store-jp.nintendo.com/point-item/">プラチナポイント交換グッズ</a></li>
+    </ul>
+
+    <div class="footer_footer">
+      <div class="footer_footer_inquiry">
+        <a
+          href="https://www.nintendo.co.jp/support/inquiry/store_qa.html?loc=f&_ga=2.57779500.780256853.1694392834-1286724790.1693370638">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+            <path fill-rule="evenodd"
+                  d="M12.388 9.001c0-.44-.358-.8-.8-.8-.442 0-.775.36-.775.8 0 .441.333.8.775.8s.8-.359.8-.8m-2.575 0c0-.44-.358-.8-.8-.8-.442 0-.8.36-.8.8 0 .441.358.8.8.8.442 0 .8-.359.8-.8m-2.6 0c0-.44-.358-.8-.801-.8-.441 0-.8.36-.8.8 0 .441.359.8.8.8.443 0 .8-.359.8-.8M8.94 4.546c-1.466 0-2.988.657-3.974 1.715-.518.556-1.12 1.473-1.035 2.686.093 1.318.653 2.33 1.713 3.088 1.939 1.39 5.302 1.646 7.967 1.225l-.617-1.094c-.218-.384-.141-.868.184-1.166.44-.405.84-1.388.84-2.064 0-2.587-2.676-4.39-5.078-4.39m2.245 10.807c-2.385 0-4.868-.502-6.646-1.773-1.505-1.079-2.371-2.635-2.501-4.5-.104-1.476.443-2.937 1.539-4.114C4.93 3.514 6.934 2.648 8.939 2.648c3.37 0 6.977 2.526 6.977 6.288 0 .947-.383 2.064-.945 2.87l.93 1.65c.146.255.164.564.049.836-.114.271-.348.473-.632.548-1.214.32-2.655.513-4.134.513"></path>
+          </svg>
+          <span>よくあるご質問・お問い合わせ</span>
+        </a>
+      </div>
+      <ul class="footer_footer_menu">
+        <li><a
+          href="https://accounts.nintendo.com/term/eula/JP?lang=ja-JP&_ga=2.119644558.780256853.1694392834-1286724790.1693370638">ご利用規約</a>
+        </li>
+        <li><a
+          href="https://accounts.nintendo.com/term/privacy_policy/JP?lang=ja-JP&_ga=2.49244448.780256853.1694392834-1286724790.1693370638">プライバシーポリシー</a>
+        </li>
+        <li><a href="https://store-jp.nintendo.com/specified-commercial-transactions.html">特定商取引法に基づく表示</a>
+        </li>
+        <li><a
+          href="https://www.nintendo.co.jp/support/legal-notes/payment-services.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">資金決済法に基づく表示</a>
+        </li>
+        <li><a
+          href="https://www.nintendo.co.jp/about_hp.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂ウェブサイトポリシー</a>
+        </li>
+        <li><a
+          href="https://www.nintendo.co.jp/?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂公式ホームページ</a>
+        </li>
+      </ul>
+      <div class="footer_footer_corp">©Nintendo</div>
+    </div>
+  </footer>
+
 </div>
-
-<div class="product_main">
-  <div class="safe_attention">ご使用前にNintendo Switchの「
-    <a href="https://www.nintendo.co.jp/anzen/index.html?_ga=2.2757040.1677809735.1693722666-1286724790.1693370638">安全に使用するために</a>
-    」を必ずお読みください
-  </div>
-  <div class="copyright">
-    <div>© 2018 Might and Delight</div>
-    <div>© 2018 CIRCLE Ent.</div>
-    <div>© 2018 Initory</div>
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="footer_breadcrumbs">
-    <ol class="footer_breadcrumbs_content">
-      <li>
-        <a href="https://store-jp.nintendo.com/">
-          <span>トップ</span>
-        </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-          <title>Forward</title>
-          <path fill-rule="evenodd"
-                d="M10.17 7c0 .258-.085.516-.256.729l-3.111 3.889c-.403.503-1.136.584-1.64.182-.502-.402-.585-1.135-.182-1.64L7.51 7 4.981 3.84c-.403-.505-.32-1.237.182-1.64.504-.402 1.237-.32 1.64.182l3.111 3.89c.171.212.256.47.256.728"></path>
-        </svg>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/software/">
-          <span>ソフト</span>
-        </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-          <title>Forward</title>
-          <path fill-rule="evenodd"
-                d="M10.17 7c0 .258-.085.516-.256.729l-3.111 3.889c-.403.503-1.136.584-1.64.182-.502-.402-.585-1.135-.182-1.64L7.51 7 4.981 3.84c-.403-.505-.32-1.237.182-1.64.504-.402 1.237-.32 1.64.182l3.111 3.89c.171.212.256.47.256.728"></path>
-        </svg>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/list/software/simulation/">
-          <span>シミュレーション</span>
-        </a>
-        <span>／</span>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/list/software/action/">
-          <span>アクション</span>
-        </a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-          <title>Forward</title>
-          <path fill-rule="evenodd"
-                d="M10.17 7c0 .258-.085.516-.256.729l-3.111 3.889c-.403.503-1.136.584-1.64.182-.502-.402-.585-1.135-.182-1.64L7.51 7 4.981 3.84c-.403-.505-.32-1.237.182-1.64.504-.402 1.237-.32 1.64.182l3.111 3.89c.171.212.256.47.256.728"></path>
-        </svg>
-      </li>
-      <li>
-        <span>シェルタージェネレーション</span>
-      </li>
-    </ol>
-  </div>
-
-  <div class="footer_recommend">
-    <h2 class="footer_recommend_title">おすすめ特集</h2>
-    <ul class="footer_breadcrumbs_content flexbox">
-      <li>
-        <a href="https://store-jp.nintendo.com/feature_customize_2306.html">
-          <img src="resource/images/switch_pastel.webp" alt="Switch Pastel">
-          <div>【公式ストア限定】</div>
-          <div>あなたなら何色にしますか？</div>
-        </a>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/software_taikenban.html">
-          <img src="resource/images/taikenban.webp" alt="Taikenban">
-          <div>まずは試してみませんか？</div>
-        </a>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/feature-pikmin/">
-          <img src="resource/images/pikmin.webp" alt="Pikmin">
-          <div>色とりどりのピクミンといっしょに。ピクミンのゲームやグッズを集めました。</div>
-        </a>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/download_ranking_2308.html">
-          <img src="resource/images/mynin_ranking_banner_2023_8.webp" alt="Ranking">
-          <div>2023年8月の月間ダウンロードランキングをご紹介します。</div>
-        </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="footer_band">
-    <ul>
-      <li>
-        <a
-          href="https://store-jp.nintendo.com/list/software/?prefn1=hasReleased&prefv1=true&srule=new-arrival">最新ソフト</a>
-      </li>
-      <li>
-        <a
-          href="https://store-jp.nintendo.com/list/software/?prefn1=isSale&prefv1=true&prefn2=softType&prefv2=TITLE&srule=most-popular">セール中ソフト</a>
-      </li>
-      <li>
-        <a href="https://store-jp.nintendo.com/list/software/?pmax=1&prefn1=softType&prefv1=TITLE&srule=new-arrival">無料ソフト</a>
-      </li>
-      <li>
-        <a
-          href="https://store-jp.nintendo.com/list/software/?prefn1=hasTrial&prefv1=true&srule=new-arrival">体験版のあるソフト</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="footer_menu">
-    <div>
-      <div class="footer_menu_title">
-        <a href="https://store-jp.nintendo.com/software/">ソフト</a>
-      </div>
-      <ul class="footer_menu_contents">
-        <li><a href="https://store-jp.nintendo.com/list/software/action/">アクション</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/adventure/">アドベンチャー</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/shooting/">シューティング</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/role-playing/">ロールプレイング</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/simulation/">シミュレーション</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/sports/">スポーツ</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/fighting/">格闘</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/racing/">レース</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/rhythm/">音楽ゲーム</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/puzzle/">パズル</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/table/">テーブルゲーム</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/party/">パーティ</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/communication/">コミュニケーション</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/education/">学習・教育</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/training/">トレーニング</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/software/tool/">ツール</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer_menu_title"><a href="https://store-jp.nintendo.com/hardware-accessory/">本体・周辺機器</a>
-      </div>
-      <ul class="footer_menu_contents">
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/hardware/">本体</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/controller/">コントローラー</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/amiibo/">amiibo</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/dock-battery/">ドック・バッテリー</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/case/">ケース</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/sd-card/">microSDカード</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/hardware-accessory/other-hardware-accessory/">その他</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="footer_menu_title"><a href="https://store-jp.nintendo.com/goods/">グッズ</a></div>
-      <ul class="footer_menu_contents">
-        <li><a href="https://store-jp.nintendo.com/list/goods/hobby/">おもちゃ・フィギュア</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/stationery/">文房具・ステーショナリー</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/fashion/">ファッション</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/bag-pouch/">バッグ・ポーチ</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/general-goods/">雑貨・小物</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/home-kitchen/">ホーム・キッチン</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/book-music-poster/">本・音楽・ポスター</a></li>
-        <li><a href="https://store-jp.nintendo.com/list/goods/smartphone-goods/">スマホグッズ</a></li>
-      </ul>
-    </div>
-    <div class="footer_menu_column">
-      <div class="footer_menu_title"><a href="https://store-jp.nintendo.com/point-item/">プラチナポイント交換グッズ</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer_footer">
-    <div class="footer_footer_inquiry">
-      <a
-        href="https://www.nintendo.co.jp/support/inquiry/store_qa.html?loc=f&_ga=2.57779500.780256853.1694392834-1286724790.1693370638">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-          <path fill-rule="evenodd"
-                d="M12.388 9.001c0-.44-.358-.8-.8-.8-.442 0-.775.36-.775.8 0 .441.333.8.775.8s.8-.359.8-.8m-2.575 0c0-.44-.358-.8-.8-.8-.442 0-.8.36-.8.8 0 .441.358.8.8.8.442 0 .8-.359.8-.8m-2.6 0c0-.44-.358-.8-.801-.8-.441 0-.8.36-.8.8 0 .441.359.8.8.8.443 0 .8-.359.8-.8M8.94 4.546c-1.466 0-2.988.657-3.974 1.715-.518.556-1.12 1.473-1.035 2.686.093 1.318.653 2.33 1.713 3.088 1.939 1.39 5.302 1.646 7.967 1.225l-.617-1.094c-.218-.384-.141-.868.184-1.166.44-.405.84-1.388.84-2.064 0-2.587-2.676-4.39-5.078-4.39m2.245 10.807c-2.385 0-4.868-.502-6.646-1.773-1.505-1.079-2.371-2.635-2.501-4.5-.104-1.476.443-2.937 1.539-4.114C4.93 3.514 6.934 2.648 8.939 2.648c3.37 0 6.977 2.526 6.977 6.288 0 .947-.383 2.064-.945 2.87l.93 1.65c.146.255.164.564.049.836-.114.271-.348.473-.632.548-1.214.32-2.655.513-4.134.513"></path>
-        </svg>
-        <span>よくあるご質問・お問い合わせ</span>
-      </a>
-    </div>
-    <ul class="footer_footer_menu">
-      <li><a
-        href="https://accounts.nintendo.com/term/eula/JP?lang=ja-JP&_ga=2.119644558.780256853.1694392834-1286724790.1693370638">ご利用規約</a>
-      </li>
-      <li><a
-        href="https://accounts.nintendo.com/term/privacy_policy/JP?lang=ja-JP&_ga=2.49244448.780256853.1694392834-1286724790.1693370638">プライバシーポリシー</a>
-      </li>
-      <li><a href="https://store-jp.nintendo.com/specified-commercial-transactions.html">特定商取引法に基づく表示</a>
-      </li>
-      <li><a
-        href="https://www.nintendo.co.jp/support/legal-notes/payment-services.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">資金決済法に基づく表示</a>
-      </li>
-      <li><a href="https://www.nintendo.co.jp/about_hp.html?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂ウェブサイトポリシー</a>
-      </li>
-      <li><a
-        href="https://www.nintendo.co.jp/?_ga=2.49244448.780256853.1694392834-1286724790.1693370638">任天堂公式ホームページ</a>
-      </li>
-    </ul>
-    <div class="footer_footer_corp">©Nintendo</div>
-  </div>
-</footer>
-
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
