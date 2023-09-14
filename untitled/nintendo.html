@@ -29,7 +29,7 @@
     <header>
       <div class="header_contentInner header_spColor">
         <div class="header_header">
-          <button class="header_gnavButton">
+          <label class="header_gnavButton" for="hamburger_menu">
             <i class="header_gnavButtonIcon">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
                 <title>メニュー</title>
@@ -37,7 +37,7 @@
                       d="M21.5 20.035c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5h-15c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5zm0-7.517c.829 0 1.5.671 1.5 1.5s-.671 1.5-1.5 1.5h-15c-.828 0-1.5-.671-1.5-1.5s.672-1.5 1.5-1.5zM21.5 5c.829 0 1.5.672 1.5 1.5 0 .829-.671 1.5-1.5 1.5h-15C5.672 8 5 7.329 5 6.5 5 5.672 5.672 5 6.5 5z"></path>
               </svg>
             </i>
-          </button>
+          </label>
           <div class="header_logo">
             <a href="https://store-jp.nintendo.com/" class="header_logoLink">
               <img src="resource/images/logo-mns.svg" alt="My Nintendo Store" class="header_logoImg">
@@ -150,6 +150,21 @@
       </div>
     </header>
   </div>
+
+  <input type="checkbox" id="hamburger_menu">
+  <div class="hamburger_menu_list">
+    <div class="hamburger_menu_button">
+      <label for="hamburger_menu">✖</label>
+    </div>
+    <ul class="hamburger_menu_content">
+      <li>ご注文履歴</li>
+      <li>お支払い方法</li>
+      <li>お届け先</li>
+      <li>ほしいものリスト</li>
+      <li>プリペイドカード番号</li>
+    </ul>
+  </div>
+  <div class="view_dark"></div>
 
   <nav class="header_navigation">
     <ul class="header_navigationGroup">
